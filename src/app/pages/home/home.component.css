@@ -1,0 +1,16 @@
+.banner
+{
+    background-image: url('../../../assets/images/banner.jpg');
+    height: 610px;
+    background-position: center;
+    background-size: cover;
+}
+
+h1
+{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    top: 55%;
+    position:fixed;
+}
