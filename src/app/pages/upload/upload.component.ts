@@ -5,6 +5,7 @@ require('aws-sdk/dist/aws-sdk');
 
 import { Data } from '@angular/router';
 import { arraysAreNotAllowedInProps } from '@ngrx/store/src/models';
+import { VirtualTimeScheduler } from 'rxjs';
 
 @Component({
   selector: 'app-upload',
@@ -30,7 +31,7 @@ export class UploadComponent implements OnInit {
       })
     })
   }
-
+  
   ngOnInit(): void {
   }
 
@@ -42,9 +43,5 @@ export class UploadComponent implements OnInit {
   upload(event: any) {
     this.fileEvent(this.selectedFiles);
   }
-
-  // reset(event: any) {
-
-  // }
 
 }
